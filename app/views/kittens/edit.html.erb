@@ -1,0 +1,13 @@
+<section id='sub-container'>
+  <%= render partial: 'form' %>
+
+  <b>
+    <%= link_to 'Delete', kitten_path(@kitten), method: 'delete',
+    class: "delete-button",
+    data: { confirm: "Are you sure you want to delete this post?" } %>
+  </b>
+
+  <div class="back-button">
+    <%= link_to '<<< Go Back', kitten_path(@kitten) %>
+  </div>
+</section>
