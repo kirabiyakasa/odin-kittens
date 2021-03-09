@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+      <div id='flash-message'>
+        <% unless notice.nil? %>
+          <p class="notice"><%= notice %></p>
+        <% end %>
+      </div>
+
+    <section id="main-container">
+      <%= yield %>
+    </section>
   </body>
 </html>
